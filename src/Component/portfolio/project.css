@@ -1,0 +1,110 @@
+.project-section {
+  padding: 40px 20px;
+  text-align: center;
+  /* background-color: #f4f4f4; */
+}
+
+.project-header {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+.project-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-buttons a {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.card-buttons .website {
+  background-color: #595959;
+}
+
+.card-buttons .website:hover {
+  background-color: #000000;
+}
+
+.card-buttons .code {
+  background-color: #000000;
+}
+
+.card-buttons .code:hover {
+  background-color: #635757;
+}
+
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .grid-container {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .grid-container {
+    padding: 5px;
+  }
+}
